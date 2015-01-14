@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/camera.css">
+  </head>
+  <body background="haikei.gif">
+      <div class="container-fluid main"></div>
+      <video id="preview"></video>
+      <button type="button" class="btn btn-primary btn-block" id="start-button"></button><br><br>
+   <p class="align-center">
+       <img src="camera.png" alt="カメラ" onclick="page()">
+   </p>
+  </body>    
+    <script src="js/camera.js"></script>
+    <script type="text/javascript">
+      function page(){
+        window.location.href = "camera2.html";
+			}
+    </script>
+</html>
