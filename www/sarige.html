@@ -16,10 +16,9 @@
 
 
 <body background="haikei.gif">
-<p>メッセージ<br><input type="text" text="shakedmessage" size="30" maxlength="10"></p>
-<p align="right">
-    <video id="preview"></video>
-      <button type="button" class="btn btn-primary btn-block" id="start-button">
+<p>メッセージ<br>
+    <input type="text" id="camera" size="30" maxlength="10"></p>
+    
     <p class="align-center">
        <input type="button" class="push"  value="決定" onclick="page()">
 
@@ -31,11 +30,20 @@
     <script src="js/app.js"></script>           
     <script src="js/init-app.js"></script>      
     <script src="xdk/init-dev.js"></script>  
-    <script src="js/camera.js"></script>
+    <script src="js/localforage.min.js"></script>
     <script type="text/javascript">   
-			function page() {
-				window.location.href = "camera.html";
-			}
+			function transiteToCamera(text){   
+    　　　　　　　
+                window.location.href = "camera.html?" + text;
+　　　　　　　}
+
+　　　　　　　function page(){
+    　　　　　　　var text = document.getElementById("camera").value;
+　　　　　　　　//    localforage.setItem("shakeNubmer", number, transiteToShake3);
+   　　　　　　　 transiteToCamera(text);
+                
+　　　　　　　　　　}
+
 			</script>
 			
     

@@ -45,9 +45,19 @@ var boot = function(event){
   var startButton = document.querySelector("#start-button");
   startButton.addEventListener("click", aquireStream);
 
-  var stopButton = document.querySelector("#stop-button");
-  stopButton.addEventListener("click", closeStream);
 };
 
+function getCameraText(){
+            var search = window.location.search;
+            var text = String(search.substring(1, search.length));
+            return text;
+        }
+        
+function page(){
+            var text = getCameraText();
+            window.location.href="camera2.html?" + text;
+        }
+
 window.addEventListener("load", boot);
+//window.addEventListener("load", page());
 window.addEventListener("unload", closeStream);

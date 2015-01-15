@@ -37,7 +37,7 @@ video{
 }
 
 #ambient-light .main{
-  color: white;
+  color:white;
 }
 
 #ambient-light.night{
@@ -46,4 +46,11 @@ video{
 }
 .align-center {
     text-align: center;
+}
+
+#dark{
+    font-size:5.0em;
+    color:white;
+    text-align: center;
+    width: 100%  
 }

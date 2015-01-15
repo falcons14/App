@@ -22,7 +22,7 @@ input, textarea  {
 
 h1 { 
     text-align: center ;
-    font-family: cursive;
+    font-family: cursive,arial, sans-serif;
     font-size:3.0em;
     color:#fff;
 }
